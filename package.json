@@ -2,7 +2,7 @@
   "name": "ibitplay",
   "version": "1.0.0",
   "private": true,
-  "description": "iBitPlay backend \u2014 microservices platform (Express + Sequelize + PostgreSQL)",
+  "description": "iBitPlay backend — microservices platform (Express + Sequelize + PostgreSQL)",
   "workspaces": [
     "packages/*",
     "services/*",
@@ -52,7 +52,8 @@
     "verify:models": "node tools/verify-models.js",
     "verify:sockets": "node tools/socket-inventory.js --list",
     "verify:secrets": "node tools/check-secrets.js",
-    "exposures:rebuild": "node scripts/rebuild-exposures.js"
+    "exposures:rebuild": "node scripts/rebuild-exposures.js",
+    "accounts:dummy": "node scripts/make-dummy-accounts.js"
   },
   "dependencies": {
     "dotenv": "^17.4.2",
